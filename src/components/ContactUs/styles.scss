@@ -1,0 +1,125 @@
+.contact-wrapper {
+    padding: 32px;
+    .contact-first-section {
+        .contact-box-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 32px 0px;
+
+            .contact-box {
+                width: 24%;
+                height: 130px;
+                background: rgba(17, 77, 127, 1);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(12.5px);
+                -webkit-backdrop-filter: blur(12.5px);
+                border: 1px solid rgba(17, 77, 127, 0.22);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    font-size: 32px;
+                    color: var(--is-quaternary-text-color);
+                    margin-bottom: 4px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: var(--is-quaternary-text-color);
+                    margin-top: 8px;
+                    font-family: var(--is-primary-font-family);
+                }
+            }
+        }
+    }
+
+    .contact-second-section {
+        width: 769px;
+        margin: 48px auto 12px auto;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 5px 65px 0px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        border-radius: 16px;
+        .common-title {
+            font-size: 22px;
+        }
+        .form-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 22px;
+            .common-input {
+                width: 48%;
+                .ant-input-affix-wrapper {
+                    height: 52px;
+                    background: #f5f3f3;
+                    color: var(--is-primary-background-color);
+                }
+                .ant-input-prefix {
+                    padding: 0px 8px 0px 0px;
+                    font-size: 22px;
+                    color: var(--is-primary-background-color);
+                }
+                input {
+                    background: #f5f3f3;
+                    font-weight: 500;
+                    color: var(--is-primary-background-color);
+                }
+                input::placeholder {
+                    color: var(--is-primary-background-color);
+                    opacity: 0.6;
+                }
+            }
+
+            .button-box {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                button {
+                    margin: 16px 0px;
+                    background: var(--is-primary-background-color);
+                    color: var(--is-quaternary-text-color);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-wrapper {
+        padding: 16px;
+        .contact-first-section {
+            .contact-box-wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: 32px 0px;
+                
+                .contact-box {
+                    width: 48%;
+                    margin-bottom: 10px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .contact-second-section {
+            width: 93%;
+            margin: 32px 0px;
+            .form-section {
+
+                .common-input {
+                    width: 95%;
+                }
+            }
+            // flex-direction: column;
+
+        }
+    }
+}
