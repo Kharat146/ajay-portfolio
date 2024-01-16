@@ -1,0 +1,96 @@
+.landing-wrapper {
+    padding: 0px 48px;
+    display: flex;
+    background: var(--is-primary-background-color);
+    height: 85vh;
+    align-items: center;
+
+    .left-section {
+        width: 50%;
+        h3 {
+            color: var(--is-quaternary-text-color);
+            font-weight: 500;
+            font-family: var(--is-primary-font-family);
+            margin-top: 12px;
+        }
+        h1 {
+            color: var(--is-primary-text-color);
+            font-weight: 700;
+            font-family: var(--is-primary-font-family);
+            margin: 4px 0px 12px 0px;
+            font-size: 42px;
+        }
+        p {
+            margin: 4px 0px 12px 0px;
+            color: var(--is-quaternary-text-color);
+            font-family: var(--is-secondary-font-family);
+            line-height: 24px;
+        }
+    }
+    .right-section {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img-section {
+            height: 450px;
+            width: 450px;
+            position: relative;
+            img {
+                width: 100%;
+                z-index: 2;
+                position: relative;
+            }
+        }
+        .img-section:before {
+            content: "";
+            position: absolute;
+            background: var(--is-tertiary-background-color);
+            width: 375px;
+            height: 300px;
+            margin: -25px 0px 0px -25px
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .landing-wrapper  { 
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        // justify-content: center;
+        .left-section {
+            width: 90%;
+            padding: 0px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 18px;
+                margin-top: 32px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .right-section {
+            width: 90%;
+            padding: 0px 16px;
+            margin-top: 32px;
+            margin-left: 16px;
+            .img-section {
+                height: 330px;
+                width: 330px;
+            }
+            .img-section::before {
+                width: 230px;
+                height: 230px;
+                margin: -20px 0px 0px -20px;
+            }
+        }
+    }
+ }
