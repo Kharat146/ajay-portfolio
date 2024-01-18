@@ -13,6 +13,10 @@
     "react-icons": "^5.0.0",
     "react-scripts": "5.0.1",
     "sass": "^1.69.7",
+<<<<<<< HEAD
+=======
+    "smooth-scroll-into-view-if-needed": "^2.0.2",
+>>>>>>> master
     "web-vitals": "^2.1.4"
   },
   "scripts": {

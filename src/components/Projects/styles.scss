@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .projects-wrapper {
     background: var(--is-primary-background-color);
     padding: 32px;
@@ -77,4 +78,85 @@
             }
         }
     }
+=======
+.projects-wrapper {
+    background: var(--is-primary-background-color);
+    padding: 32px;
+    height: 100%;
+    h1 {
+        text-align: center;
+        color: var(--is-quaternary-text-color);
+    }
+
+    .project-main-container {
+        h2 {
+            color: var(--is-quaternary-text-color);
+            margin: 32px 0px 22px 0px;
+            font-size: 24px;
+        }
+        .top-container,
+        .bottom-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .common-project-card {
+            width: 30%;
+            border: 1px solid var(--is-tertiary-background-color);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px 0px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+
+            .project-logo {
+                width: 140px;
+                height: 140px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--is-quaternary-text-color);
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            h2 {
+                color: var(--is-quaternary-text-color);
+                margin: 16px 0px;
+                font-size: 22px;
+            }
+            button {
+                margin: 8px 0px 16px 0px;
+            }
+        }
+        .common-project-card:hover {
+            background: var(--is-tertiary-background-color);
+            h2 {
+                color: var(--is-primary-background-color);
+            }
+            button {
+                background: var(--is-primary-background-color);
+                color: var(--is-quaternary-text-color);
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .projects-wrapper {
+        padding: 16px;
+        .project-main-container {
+            .top-container,
+            .bottom-container {
+                flex-direction: column;
+            }
+            .common-project-card {
+                width: 95%;
+                margin-bottom: 32px;
+            }
+        }
+    }
+>>>>>>> master
 }

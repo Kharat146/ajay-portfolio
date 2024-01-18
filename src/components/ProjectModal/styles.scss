@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .modal-container {
     .modal-wrapper {
         h3 {
@@ -39,4 +40,50 @@
             }
         }
     }
+=======
+.modal-container {
+    .modal-wrapper {
+        h3 {
+            font-size: 22px;
+        }
+        .modal-project-logo {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+            }
+        }
+        .modal-project-title {
+            h1 {
+                text-align: center;
+            }
+        }
+        .modal-project-desc {
+            p {
+                font-family: var(--is-secondary-font-family);
+                color: var(--is-tertiary-text-color);
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+        }
+        .modal-project-skill {
+            display: flex;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #80808075;
+            padding-bottom: 4px;
+            p {
+                font-family: var(--is-secondary-font-family);
+                font-weight: 500;
+                letter-spacing: 0.1px;
+            }
+            p:first-child {
+                font-weight: 700;
+                color: #020948;
+                width: 50%;
+            }
+        }
+    }
+>>>>>>> master
 }

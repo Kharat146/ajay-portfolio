@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
     --is-primary-text-color: #A3FCD2;
     --is-secondary-text-color: #000000;
@@ -11,4 +12,19 @@
 
     --is-primary-font-family: 'Rubik', sans-serif;
     --is-secondary-font-family: 'Roboto', sans-serif;
+=======
+:root {
+    --is-primary-text-color: #A3FCD2;
+    --is-secondary-text-color: #000000;
+    --is-tertiary-text-color: #7d8286;
+    --is-quaternary-text-color: #ffffff;
+
+    --is-primary-background-color: #114D7F;
+    --is-secondary-background-color: #A3FCD2;
+    --is-tertiary-background-color: #A6FCFF;
+    --is-quaternary-background-color: #EDFEF6;
+
+    --is-primary-font-family: 'Rubik', sans-serif;
+    --is-secondary-font-family: 'Roboto', sans-serif;
+>>>>>>> master
 }

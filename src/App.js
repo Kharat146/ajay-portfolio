@@ -35,7 +35,11 @@ function App() {
   return (
     <div className="App">
       <Headers scrollToRef={scrollToRef}/>
+<<<<<<< HEAD
       <Landing homeSectionRef={homeSectionRef}/>
+=======
+      <Landing homeSectionRef={homeSectionRef} ContactUsSection={ContactUsSectionRef}/>
+>>>>>>> master
       <About aboutSectionRef={aboutSectionRef}/>
       <Experience experienceSectionRef={experienceSectionRef}/>
       <Projects projectSectionRef={projectSectionRef}/>
