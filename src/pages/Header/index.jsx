@@ -3,6 +3,7 @@ import { FaHome, FaLaptopCode, FaPhoneAlt, FaUser, FaUserAlt } from "react-icons
 import { MdAttachEmail } from "react-icons/md";
 import { IoSchoolSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
+import smoothScrollIntoView from 'smooth-scroll-into-view-if-needed';
 import "./styles.scss";
 import { Modal } from 'antd';
 
@@ -11,10 +12,11 @@ const Headers = (props) => {
 
     // Scroll up to the clicked section
     const handleClick = (ref) => {
-        ref.current.scrollIntoView({
-            behavior: 'smooth',
-        });
         setIsOpenModal(false);
+        smoothScrollIntoView(ref.current, {
+            behavior: 'smooth',
+            block: 'start',
+        });
     };
 
     return (

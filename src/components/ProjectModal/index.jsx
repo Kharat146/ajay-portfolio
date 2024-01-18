@@ -21,10 +21,9 @@ const ProjectModal = (Props) => {
                 <div className="modal-project-title">
                     <h1 className='common-title'>{projectState.projectTitle}</h1>
                 </div>
-                <h3 className='common-title'>About Project:</h3>
+                {projectState.projectDesc && <h3 className='common-title'>About Project:</h3>}
                 <div className="modal-project-desc">
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;{projectState.projectDesc}</p>
-                    <br />
+                    {projectState.projectDesc && <p>&nbsp;&nbsp;&nbsp;&nbsp;{projectState.projectDesc}</p>}
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;{projectState.projectWorkDesc}</p>
                 </div>
                 <h3 className='common-title'>Tools & Technology:</h3>

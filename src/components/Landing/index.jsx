@@ -3,8 +3,14 @@ import imgUrl from "../../assets/images/image1.jpeg";
 import "./styles.scss";
 
 const Landing = (props) => {
-    const { homeSectionRef } = props;
-    console.log("ggg",[] == ![])
+    const { homeSectionRef, ContactUsSection } = props;
+
+        // Scroll up to the clicked section
+        const handleClick = (ref) => {
+            ref.current.scrollIntoView({
+                behavior: 'smooth',
+            });
+        };
 
     return (
         <div className="landing-wrapper" ref={homeSectionRef}>
@@ -35,6 +41,7 @@ const Landing = (props) => {
                     data-aos="slide-up"
                     data-aos-easing="linear"
                     data-aos-duration="1000"
+                    onClick={() => handleClick(ContactUsSection)}
                 >
                     Contact Us
                 </button>

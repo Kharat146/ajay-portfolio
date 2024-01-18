@@ -28,6 +28,8 @@
         .modal-project-skill {
             display: flex;
             margin-bottom: 4px;
+            border-bottom: 1px solid #80808075;
+            padding-bottom: 4px;
             p {
                 font-family: var(--is-secondary-font-family);
                 font-weight: 500;
@@ -36,6 +38,7 @@
             p:first-child {
                 font-weight: 700;
                 color: #020948;
+                width: 50%;
             }
         }
     }

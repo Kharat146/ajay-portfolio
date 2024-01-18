@@ -35,10 +35,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                background: var(--is-quaternary-text-color);
                 img {
-                    width: 120px;
-                    height: 120px;
-                    border-radius: 100%;
+                    width: 100px;
+                    height: 100px;
                 }
             }
             h2 {

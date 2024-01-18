@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <Headers scrollToRef={scrollToRef}/>
-      <Landing homeSectionRef={homeSectionRef}/>
+      <Landing homeSectionRef={homeSectionRef} ContactUsSection={ContactUsSectionRef}/>
       <About aboutSectionRef={aboutSectionRef}/>
       <Experience experienceSectionRef={experienceSectionRef}/>
       <Projects projectSectionRef={projectSectionRef}/>
