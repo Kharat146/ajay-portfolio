@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .experience-wrapper {
     padding: 32px;
     // background: #f0f3f5;
@@ -17,24 +16,4 @@
     .experience-card-section {
         flex-direction: column;
     }
-=======
-.experience-wrapper {
-    padding: 32px;
-    // background: #f0f3f5;
-
-    .experience-card-section {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 575.98px) { 
-    .experience-wrapper { 
-        padding: 16px;
-    }
-
-    .experience-card-section {
-        flex-direction: column;
-    }
->>>>>>> master
 }
